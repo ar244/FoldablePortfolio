@@ -4,6 +4,8 @@
  <div class="row">
  <ul>
 		{{#each users}}
-	 	{{this.firstName}} {{this.lastName}}
+	 	<div id="names">{{this.firstName}} {{this.lastName}}</div>
 	 	{{/each}}
   </ul>
+
+  <button class="btn-default" id="pdf">CONVERT</button>
