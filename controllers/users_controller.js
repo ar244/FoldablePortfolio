@@ -12,6 +12,16 @@ router.get("/", function(req, res) {
       users: data
     };
     console.log(hbsObject);
+    res.render("landing", hbsObject);
+  });
+});
+
+router.get("/input", function(req, res) {
+    user.all(function(data) {
+    var hbsObject = {
+      users: data
+    };
+    console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
