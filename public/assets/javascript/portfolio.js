@@ -1,13 +1,21 @@
 $(document).ready(function() {
 
-	var doc = new jsPDF({
-	  orientation: 'landscape',
-	})
-
 	$("#pdf").on('click', function() {
-		console.log("here");
-		console.log(window.location.pathname);
-		doc.text('Hello world!', 1, 1)
-		doc.save('names.pdf')
+
+		var doc = new jsPDF();
+
+		var specialElementHandlers = {
+			'#editor': function(element, renderer){
+				return true;
+			}
+		};
+
+		doc.fromHTML($('.container').get(0), 15, 15, {
+			'width': 170, 
+			'elementHandlers': specialElementHandlers
+		});
+		doc.save("myfoldableportfolio");
+		doc.output('dataurlnewwindow'); 
 	});
-}
+
+});
