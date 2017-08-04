@@ -27,6 +27,15 @@ function objToSql(ob) {
 
 // Object for all our SQL statement functions.
 var orm = {
+  lastOne: function(tableInpt, cb) {
+    var queryString = "SELECT * FROM " + tableInpt + " WHERE id=(SELECT MAX(id) FROM " + tableInpt + ");";
+    connection.query(queryString, function(err, result) {
+      if (err) {
+        throw err;
+      }
+      cb(result);
+    });
+  },
   all: function(tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, function(err, result) {

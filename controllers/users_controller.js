@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 });
 
 router.get("/portfolio", function(req, res) {
-  user.all(function(data) {
+  user.lastOne(function(data) {
     var hbsObject = {
       users: data
     };

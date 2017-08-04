@@ -2,6 +2,12 @@
 var orm = require("../config/orm.js");
 
 var user = {
+  lastOne: function(cb) {
+    orm.lastOne("users", function(res) {
+      cb(res);
+    });
+  },
+
   all: function(cb) {
     orm.all("users", function(res) {
       cb(res);
