@@ -64,3 +64,98 @@ img {
 	border: 10px solid #ff4719 !important;
 	margin-top: 25px;
 }
+
+/* Landing page */
+
+
+.foldedText {
+	background-image: url("/birds.png");
+	height: 350px;
+	margin-left: 100px;
+}
+
+
+footer {
+	position: fixed;
+	bottom: 0;
+	background-color: black;
+	text-align:center;
+	color: white;
+	height: 70px;
+	line-height: 70px;
+	width: 100%;
+	margin-left: 0px;
+}
+
+#start {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#left {
+	
+	height:350px
+}
+
+#h {
+	margin:0px;
+	padding: 0px;
+	background-color:#1f5558;
+	text-align: center;
+	height: 100px;
+	line-height:100px;
+	padding: 0px;
+	margin:0px;
+	border: 0px;
+	color: white;
+	font-size: 40px;
+	font-family: "courier new";
+}
+
+#mainC {
+	background: linear-gradient(#5ab2b7, #bde9ec);
+	height: 600px;
+	padding-top: 25px;
+}
+
+.sideText {
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+#soar {
+	color: white;
+	text-align: center;
+}
+
+.btn-circle {
+ border-radius: 50%;
+ height: 70px;
+ width: 100px;
+}
+
+#b1 {
+	margin-left: 60px;
+	background-color: black;
+	width: 200px;
+	color: white;
+}
+
+#b2 {
+	margin-left: 150px;
+	background-color: black;
+	color: white;
+	width: 200px;
+}
+
+#b3 {
+	margin-left: 60px;
+	background-color: black;
+	color: white;
+	width: 200px;
+}
+
+#b1, #b2, #b3:focus{
+	outline: 0;
+}
