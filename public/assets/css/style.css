@@ -11,7 +11,7 @@
 footer {
 	position: fixed;
 	bottom: 0;
-	background-color: #1f5558;
+	background-color: black;
 	text-align:center;
 	color: white;
 	height: 70px;
@@ -43,12 +43,13 @@ footer {
 	border: 0px;
 	color: white;
 	font-size: 40px;
+	font-family: "courier new";
 }
 
 #mainC {
-	background-color: #5ab2b7;
+	background: linear-gradient(#5ab2b7, #bde9ec);
 	height: 600px;
-	padding-top: 10px;
+	padding-top: 25px;
 }
 
 .sideText {
@@ -70,6 +71,7 @@ footer {
 #b1 {
 	margin-left: 60px;
 	background-color: black;
+	width: 200px;
 	color: white;
 }
 
@@ -77,10 +79,16 @@ footer {
 	margin-left: 150px;
 	background-color: black;
 	color: white;
+	width: 200px;
 }
 
 #b3 {
 	margin-left: 60px;
 	background-color: black;
 	color: white;
+	width: 200px;
+}
+
+#b1, #b2, #b3:focus{
+	outline: 0;
 }
