@@ -29,8 +29,6 @@ $(document).ready(function() {
 	});
 	oriDomi.accordion(40);
 
-
-
 	$(".foldedText").on("mouseover", function() {
 		var num = Math.floor(Math.random() * 40 + 30);
 		console.log(num);

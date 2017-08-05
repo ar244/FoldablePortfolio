@@ -2,57 +2,109 @@
 	box-sizing: border-box;
 }
 
-.container {
-	margin-top: 50px;
+@media print {
+	.hello {
+		color: white !important;
+	}
+
+	.main, .about, .experience, .projects {
+		background-color: #ff7a58 !important;
+		-webkit-print-color-adjust: exact;
+		color: white !important;
+	}
+
+	.container {
+		border: 1px solid black !important;
+	}
+
+	#credit, .fa:before {
+		color: white !important;
+	}
 }
 
-.hello {
-	color: #ff4719 !important;
+.container {
+	margin-top: 30px;
+	border: 2px solid black !important;
+}
+
+.hello, .fa:before {
+	color: white !important;
+}
+
+.fa:before {
+	color: white !important;
 }
 
 h1 {
 	font-weight: bolder;
 	font-size: 70px;
+	color: white !important;
 }
 
 h2 {
 	font-size: 50px;
 	font-weight: bolder;
+	color: white !important;
 }
 
 h3 {
 	font-weight: bolder;
 	font-size: 40px;
+	color: white !important;
+}
+
+h4 {
+	font-weight: bolder;
+	color: white !important;
+}
+
+ul, li, h5 {
+	color: black;
+	font-weight: bolder;
+}
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
 }
 
 .elevPitch {
 	margin-right: 10px;
 	margin-left: 10px;
+	color: black !important;
 }
 
 .main {
-	border: 10px solid #ff4719 !important;
-	height: 600px;
+	border: 10px solid white !important;
+/*	height: 600px;*/
+	background-color: #ff7a58 !important;
+	color: white !important;
 }
 
 .about {
-	border: 10px solid #ff4719 !important;
-	height: 600px;
+	border: 10px solid white !important;
+/*	height: 600px;*/
 	padding-top: 10px;
+	background-color: #ff7a58 !important;
+	color: white !important;
 }
 
 .experience {
-	border: 10px solid #ff4719 !important;
-	height: 600px;
+	border: 10px solid white !important;
+/*	height: 600px;*/
+	color: white !important;
+	background-color: #ff7a58 !important;
 }
 
-.showcase {
-	border: 10px solid #ff4719 !important;
-	height: 600px;
+.projects {
+	border: 10px solid white !important;
+/*	height: 600px;*/
+	color: white !important;
+	background-color: #ff7a58 !important;
 }
 
 img {
-
 	margin: 0 auto;
 }
 
@@ -61,19 +113,27 @@ img {
 	height: 140px;
 	width: 140px;
 	margin: 0 auto;
-	border: 10px solid #ff4719 !important;
+	border: 10px solid white !important;
 	margin-top: 25px;
 }
 
-/* Landing page */
+u {
+	text-decoration: underline;
+}
 
+#credit {
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+/* Landing page */
 
 .foldedText {
 	background-image: url("/birds.png");
 	height: 350px;
 	margin-left: 100px;
 }
-
 
 footer {
 	position: fixed;
