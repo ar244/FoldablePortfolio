@@ -1,11 +1,78 @@
-<div class="container">
-  <h1>My Portfolio</h1>
+<div class="row">
+	{{#each users}}
+	<div class="col-xs-12 col-xs-12 text-center">
+		<h6>Your portfolio is ready!<br>Choose a paper with a nice finish, print it, cut around the black border lines, fold at the inner white borders and take it to your next networking event.</h6><button type="button" class="btn btn-success" id="printBtn">Save & Print</button>
+	</div>
+</div>
 
- <div class="row">
- <ul>
-		{{#each users}}
-	 	<div id="names">{{this.firstName}} {{this.lastName}}</div>
-	 	{{/each}}
-  </ul>
+<div class="container" id="portfolioContainer">
+    <div class="row equal">
+		 <div class="col-xs-6 col-xs-6 main">
+			<img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAw9AAAAJGU1MDUyNzVkLWY1YzUtNGU3ZS1hNzE5LTU1NjcxNmJhYWZiOA.jpg" class="center-block userImg"><hr>
+			<h1 class="text-center hello" id="h1Portfolio">HELLO!</h1>
+			<h1 class="text-center name" id="h1Portfolio">I AM {{this.firstName}} {{this.lastName}}.</h1>
+			<h5 class="elevPitch">{{this.elevator}}</h5>
+		 </div>
+		<div class="col-xs-6 col-xs-6 about">
+			<h2 class="text-center">ABOUT ME</h2><hr>
+			<h3>Contact</h3>
+				<ul>
+					<li>{{this.webAddress}}</li>
+					<li>{{this.email}}</li>
+					<li>{{this.address}}</li>
+				</ul><hr>
+			<h3>Education</h3>
+				<ul>
+					<li>{{this.education1}}</li>
+					<li>{{this.education2}}</li>
+					<li>{{this.education3}}</li>
+				</ul><hr>
+			<h3>Skills</h3>
+				<h5>{{this.skills}}.</h5>
+		 </div>
+	</div>
+	
+    <div class="row equal">
+		 <div class="col-xs-6 col-xs-6 experience">
+			<h2 class="text-center">EXPERIENCE</h2><hr>
+					<h4>{{this.exp1}}</h4>
+						<ul>
+							<li>{{this.exp1desc}}.</li>
+							<li>I was the person who did everything and I was amazing dfshgsdh hjsgdfhdgf sdhfjgsdf dfdffddf.</li>
+						</ul><hr>
+					<h4>{{this.exp2}}</h4>
+						<ul>
+							<li>{{this.exp2desc}}.</li>
+							<li>I was the person who did everything and I was amazing dfshgsdh hjsgdfhdgf sdhfjgsdf sdfdsfsdfds.</li>
+						</ul><hr>
+					<h4>{{this.exp3}}</h4>
+						<ul>
+							<li>{{this.exp3desc}}.</li>
+							<li>I was the person who did everything and I was amazing dfshgsdh hjsgdfhdgf sdhfjgsdf sdfsdfdsfs.</li>
+						</ul>
+		</div>
+		 
+		<div class="col-xs-6 col-xs-6 projects">
+			<h2 class="text-center">PROJECTS</h2><hr>
+				<h4>{{this.proj1}}</h4>
+					<ul>
+						<li>{{this.proj1desc}}.</li>
+					</ul><hr>
+				<h4>{{this.proj2}}</h4>
+					<ul>
+						<li>{{this.proj2desc}}.</li>
+					</ul><hr>
+				<h4>{{this.proj3}}</h4>
+					<ul>
+						<li>{{this.proj3desc}}.</li>
+					</ul><hr>
+				<div id="credit"><i class="fa fa-map-o fa-lg" aria-hidden="true">&nbsp;&nbsp;</i>www.myfoldableportfolio.com<br>&copy;2017 Anuradha Ramachandra, Ebru Yucesar</div><br>
+		</div>
+	</div>
 
-  <button class="btn-default" id="printBtn">CONVERT</button>
+  
+	<h6 class="text-center" id="footer">www.myfoldableportfolio.com -- ©2017 Anuradha Ramachandra, Ebru Yucesar</h6>
+ 	{{/each}}
+
+  </div>
+

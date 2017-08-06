@@ -1,30 +1,165 @@
-<div class="container-fluid">
-  <h1>Foldable Portfolios!</h1>
+<!-- <div class="container" id="containerIndex"> -->
+  <h1 id="indexHeading">Enter your details</h1>
 
  <div class="row">
-  <h2>Enter your name</h2>
+    <form class="col s12" action="/" method="POST">
 
- <hr>
- <div class="row">
-  
-  <form class="create-update-form" action="/" method="POST">
+      <div class="row">
 
-    <div class="form-group">
-      <label for="firstname">Enter First Name:</label>
-      <input type="text" id="firstName" name="firstName">
+        <div class="section" id="nameSection"> 
+          <div class="input-field col s6">
+            <input id="firstName" type="text" class="validate" name="firstName" required>
+            <label for="firstName" class="active">First Name</label>
+          </div>
+          <div class="input-field col s6">
+          <!-- data-length is Materialize. required is html -->
+            <input id="lastName" type="text" class="validate" name="lastName" required>
+            <label for="lastName" class="active">Last Name</label>
+          </div>
 
-      <label for="lastname">Enter Last Name:</label>
-      <input type="text" id="lastName" name="lastName">
+          <div class="input-field col s12">
+            <textarea id="elevator" name="elevator" class="materialize-textarea" data-length="200" required maxlength=200></textarea>
+            <label for="elevator">What is your elevator pitch?</label>
+        </div>
+      </div>  <!-- nameSection -->
+
+      <!-- Upload image -->
+      <div class="file-field input-field">
+      <div class="btn">
+        <span>Upload your picture</span>
+        <input type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" name="picture">
+      </div>
     </div>
 
-    <button class="btn-default" id="add" type="submit">Create Portfolio</button>
-    <hr>
-    <hr>
 
-    
+      <div class="section">
 
-  </form>
+        <div class="input-field col s4">
+          <input id="webAddress" type="text" class="validate" name="webAddress" required>
+          <label for="webAddress" class="active">Web Page</label>
+        </div>
 
-</div>
+        <div class="input-field col s4">
+          <input id="email" type="email" class="validate" name="email" required>
+          <label for="email" class="active">Email</label>
+        </div>
 
-</div>
+        <div class="input-field col s4">
+          <input id="address" type="text" class="validate" name="address" required>
+          <label for="address" class="active">Address</label>
+        </div>
+
+      </div> 
+
+      <div class="section">
+        <div class="input-field col s4">
+          <input id="education1" type="text" class="validate" name="education1" required>
+          <label for="education1" class="active">Education 1</label>
+        </div>
+
+        <div class="input-field col s4">
+          <input id="education2" type="text" class="validate" name="education2">
+          <label for="education2" class="active">Education 2</label>
+        </div>
+
+        <div class="input-field col s4">
+          <input id="education3" type="text" class="validate" name="education3" >
+          <label for="education3" class="active">Education 3</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="skills" type="text" class="validate" name="skills"  data-length="200" required maxlength=200>
+          <label for="skills" class="active">What are your skills?</label>
+        </div>
+
+
+      </div>  <!-- section -->
+
+      <!-- Work Experience -->
+      <div class="section">
+        
+        <div class="input-field col s4">
+          <input id="exp1" type="text" class="validate" name="exp1" required>
+          <label for="exp1" class="active">Job title 1</label>
+        </div>
+
+        <div class="input-field col s8">
+          <input id="exp1desc" type="text" class="validate" name="exp1desc"  data-length="200" required maxlength=200>
+          <label for="exp1desc" class="active">Description</label>
+        </div>
+
+        <div class="input-field col s4">
+          <input id="exp2" type="text" class="validate" name="exp2" required>
+          <label for="exp2" class="active">Job title 2</label>
+        </div>
+
+        <div class="input-field col s8">
+          <input id="exp2desc" type="text" class="validate" name="exp2desc"  data-length="200" required maxlength=200>
+          <label for="exp2desc" class="active">Description</label>
+        </div>
+
+        <div class="input-field col s4">
+          <input id="exp3" type="text" class="validate" name="exp3" required>
+          <label for="exp3" class="active">Job title 3</label>
+        </div>
+
+        <div class="input-field col s8">
+          <input id="exp3desc" type="text" class="validate" name="exp3desc"  data-length="200" required maxlength=200>
+          <label for="exp3desc" class="active">Description</label>
+        </div>
+
+      </div> <!-- section -->
+
+      <div class="section">
+        <!-- Projects -->
+
+        <div class="input-field col s4">
+          <input id="proj1" type="text" class="validate" name="proj1" required>
+          <label for="proj1" class="active">Project 1</label>
+        </div>
+
+        <div class="input-field col s8">
+          <input id="proj1desc" type="text" class="validate" name="proj1desc"  data-length="200" required maxlength=200>
+          <label for="proj1desc" class="active">Description</label>
+        </div>
+
+        <div class="input-field col s4">
+          <input id="proj2" type="text" class="validate" name="proj2" required>
+          <label for="proj2" class="active">Project 2</label>
+        </div>
+
+        <div class="input-field col s8">
+          <input id="proj2desc" type="text" class="validate" name="proj2desc"  data-length="200" required maxlength=200>
+          <label for="proj2desc" class="active">Description</label>
+        </div>
+
+        <div class="input-field col s4">
+          <input id="proj3" type="text" class="validate" name="proj3" required>
+          <label for="proj3" class="active">Project 3</label>
+        </div>
+
+        <div class="input-field col s8">
+          <input id="proj3desc" type="text" class="validate" name="proj3desc"  data-length="200" required maxlength=200>
+          <label for="proj3desc" class="active">Description</label>
+        </div>
+
+      </div>
+
+
+      
+
+      <div class="divider"></div>
+
+      <button class="btn waves-effect waves-light" type="submit" id="add" name="action">Submit
+        <i class="material-icons right"></i>
+      </button>
+    </form>
+   </div>
+  
+
+
+ 
+ 
