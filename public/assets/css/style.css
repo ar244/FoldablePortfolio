@@ -260,6 +260,8 @@ footer {
 	border: 2px;
 	border-color: black;
   	border-style: solid;
+  	background-color: lightyellow;
+  	box-shadow: 10px;
 }
 
 legend {
