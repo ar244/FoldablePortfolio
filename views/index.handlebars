@@ -1,163 +1,170 @@
-<!-- <div class="container" id="containerIndex"> -->
-  <h1 id="indexHeading">Enter your details</h1>
 
- <div class="row">
-    <form class="col s12" action="/" method="POST">
+<h1 id="indexHeading" class="text-center">Enter your details</h1>
+<div class="container" id="containerIndex">
+  
 
-      <div class="row">
+  <div class="row">
+    <form action="/" method="POST">
 
-        <div class="section" id="nameSection"> 
-          <div class="input-field col s6">
-            <input id="firstName" type="text" class="validate" name="firstName" required>
-            <label for="firstName" class="active">First Name</label>
-          </div>
-          <div class="input-field col s6">
-          <!-- data-length is Materialize. required is html -->
-            <input id="lastName" type="text" class="validate" name="lastName" required>
-            <label for="lastName" class="active">Last Name</label>
-          </div>
-
-          <div class="input-field col s12">
-            <textarea id="elevator" name="elevator" class="materialize-textarea" data-length="200" required maxlength=200></textarea>
-            <label for="elevator">What is your elevator pitch?</label>
-        </div>
-      </div>  <!-- nameSection -->
-
-      <!-- Upload image -->
-      <div class="file-field input-field">
-      <div class="btn">
-        <span>Upload your picture</span>
-        <input type="file">
+    <fieldset class="fieldset">
+      <legend>Introduction</legend>
+      <div class="form-group">
+        <input id="firstName" type="text" class="form-control" name="firstName" maxlength="12"required>
+          <label for="firstName" class="fieldsetLabel"><span>*</span>First Name</label>
       </div>
-      <div class="file-path-wrapper">
-        <input class="file-path validate" type="text" name="picture">
+          
+      <div class="form-group">
+        <input id="lastName" type="text" class="form-control" name="lastName" maxlength="12" required>
+        <label for="lastName" class="fieldsetLabel"><span>*</span>Last Name</label>
       </div>
-    </div>
+    
 
+      <div class="form-group">
+        <textarea id="elevator" name="elevator" class="form-control" maxlength="200" required></textarea>
+        <label for="elevator" class="fieldsetLabel"><span>*</span>What is your elevator pitch?</label>
+      </div>
+      
 
-      <div class="section">
+      <div class="form-group">
+        <input id="picture" type="text" class="form-control" name="picture" required>
+        <label for="picture" class="fieldsetLabel"><span>*</span>Path to profile picture</label>
+      </div>
+    </fieldset>
 
-        <div class="input-field col s4">
-          <input id="webAddress" type="text" class="validate" name="webAddress" required>
-          <label for="webAddress" class="active">Web Page</label>
-        </div>
+  
+    <fieldset class="fieldset">
+      <legend>Contact Info</legend>
+      <div class="form-group">
+        <input id="webAddress" type="text" class="form-control" name="webAddress" maxlength="44" required>
+        <label for="webAddress" class="fieldsetLabel"><span>*</span>Web Page</label>
+      </div>
+      
 
-        <div class="input-field col s4">
-          <input id="email" type="email" class="validate" name="email" required>
-          <label for="email" class="active">Email</label>
-        </div>
-
-        <div class="input-field col s4">
-          <input id="address" type="text" class="validate" name="address" required>
-          <label for="address" class="active">Address</label>
-        </div>
-
-      </div> 
-
-      <div class="section">
-        <div class="input-field col s4">
-          <input id="education1" type="text" class="validate" name="education1" required>
-          <label for="education1" class="active">Education 1</label>
-        </div>
-
-        <div class="input-field col s4">
-          <input id="education2" type="text" class="validate" name="education2">
-          <label for="education2" class="active">Education 2</label>
-        </div>
-
-        <div class="input-field col s4">
-          <input id="education3" type="text" class="validate" name="education3" >
-          <label for="education3" class="active">Education 3</label>
-        </div>
-
-        <div class="input-field col s12">
-          <input id="skills" type="text" class="validate" name="skills"  data-length="200" required maxlength=200>
-          <label for="skills" class="active">What are your skills?</label>
-        </div>
-
-
-      </div>  <!-- section -->
-
-      <!-- Work Experience -->
-      <div class="section">
-        
-        <div class="input-field col s4">
-          <input id="exp1" type="text" class="validate" name="exp1" required>
-          <label for="exp1" class="active">Job title 1</label>
-        </div>
-
-        <div class="input-field col s8">
-          <input id="exp1desc" type="text" class="validate" name="exp1desc"  data-length="200" required maxlength=200>
-          <label for="exp1desc" class="active">Description</label>
-        </div>
-
-        <div class="input-field col s4">
-          <input id="exp2" type="text" class="validate" name="exp2" required>
-          <label for="exp2" class="active">Job title 2</label>
-        </div>
-
-        <div class="input-field col s8">
-          <input id="exp2desc" type="text" class="validate" name="exp2desc"  data-length="200" required maxlength=200>
-          <label for="exp2desc" class="active">Description</label>
-        </div>
-
-        <div class="input-field col s4">
-          <input id="exp3" type="text" class="validate" name="exp3" required>
-          <label for="exp3" class="active">Job title 3</label>
-        </div>
-
-        <div class="input-field col s8">
-          <input id="exp3desc" type="text" class="validate" name="exp3desc"  data-length="200" required maxlength=200>
-          <label for="exp3desc" class="active">Description</label>
-        </div>
-
-      </div> <!-- section -->
-
-      <div class="section">
-        <!-- Projects -->
-
-        <div class="input-field col s4">
-          <input id="proj1" type="text" class="validate" name="proj1" required>
-          <label for="proj1" class="active">Project 1</label>
-        </div>
-
-        <div class="input-field col s8">
-          <input id="proj1desc" type="text" class="validate" name="proj1desc"  data-length="200" required maxlength=200>
-          <label for="proj1desc" class="active">Description</label>
-        </div>
-
-        <div class="input-field col s4">
-          <input id="proj2" type="text" class="validate" name="proj2" required>
-          <label for="proj2" class="active">Project 2</label>
-        </div>
-
-        <div class="input-field col s8">
-          <input id="proj2desc" type="text" class="validate" name="proj2desc"  data-length="200" required maxlength=200>
-          <label for="proj2desc" class="active">Description</label>
-        </div>
-
-        <div class="input-field col s4">
-          <input id="proj3" type="text" class="validate" name="proj3" required>
-          <label for="proj3" class="active">Project 3</label>
-        </div>
-
-        <div class="input-field col s8">
-          <input id="proj3desc" type="text" class="validate" name="proj3desc"  data-length="200" required maxlength=200>
-          <label for="proj3desc" class="active">Description</label>
-        </div>
-
+      <div class="form-group">
+        <input id="email" type="email" class="form-control" name="email" maxlength="44" required>
+        <label for="email" class="fieldsetLabel"><span>*</span>Email</label>
       </div>
 
+      <div class="form-group">
+        <input id="address" type="text" class="form-control" name="address" maxlength="44" required>
+        <label for="address" class="fieldsetLabel"><span>*</span>Address</label>
+      </div>
+    </fieldset>
+
+  <fieldset class="fieldset">
+    <legend>Education and Skills</legend>
+      <div class="form-group">
+          <input id="education1" type="text" class="form-control" name="education1" maxlength="44" required>
+          <label for="education1" class="fieldsetLabel"><span>*</span>Education 1</label>
+      </div>
+
+      <div class="form-group">
+        <input id="education2" type="text" class="form-control" name="education2" maxlength="44">
+        <label for="education2" class="fieldsetLabel"><span>*</span>Education 2</label>
+      </div>
+
+      <div class="form-group">
+        <input id="education3" type="text" class="form-control" name="education3" maxlength="44">
+        <label for="education3" class="fieldsetLabel"><span>*</span>Education 3</label>
+      </div>
+
+      <div class="form-group maxlength="44" col-md-12">
+        <input id="skills" type="text" class="form-control" name="skills"  maxlength="200" required maxlength=200>
+        <label for="skills"  class="fieldsetLabel"><span>*</span>What are your skills?</label>
+      </div>
+
+  </fieldset>
 
       
 
-      <div class="divider"></div>
+     <!-- Work Experience -->
+     <fieldset class="fieldset">
+      <legend>Work Experience</legend>
+      <div class="form-group">
+        <input id="exp1" type="text" class="form-control" name="exp1" maxlength="44" required>
+        <label for="exp1"  class="fieldsetLabel"><span>*</span>Job title 1</label>
+      </div>
 
-      <button class="btn waves-effect waves-light" type="submit" id="add" name="action">Submit
-        <i class="material-icons right"></i>
-      </button>
+      <div class="form-group">
+        <input id="exp1desc" type="text" class="form-control" name="exp1desc"  maxlength="44" required maxlength=200>
+        <label for="exp1desc"  class="fieldsetLabel"><span>*</span>Description</label>
+      </div>
+
+      <div class="form-group">
+        <input id="exp2" type="text" class="form-control" name="exp2" maxlength="44" required>
+        <label for="exp2" class="fieldsetLabel"><span>*</span>Job title 2</label>
+      </div>
+
+      <div class="form-group">
+        <input id="exp2desc" type="text" class="form-control" name="exp2desc"  maxlength="44" required>
+        <label for="exp2desc" class="fieldsetLabel"><span>*</span>Description</label>
+      </div>
+
+      <div class="form-group">
+        <input id="exp3" type="text" class="form-control" name="exp3" maxlength="44" required>
+        <label for="exp3"  class="fieldsetLabel"><span>*</span>Job title 3</label>
+      </div>
+
+      <div class="form-group">
+        <input id="exp3desc" type="text" class="form-control" name="exp3desc"  maxlength="44" required maxlength=200>
+        <label for="exp3desc"  class="fieldsetLabel"><span>*</span>Description</label>
+      </div>
+    </fieldset>
+      <!-- Projects -->
+
+    <fieldset class="fieldset">
+    <legend>Projects</legend>
+      <div class="form-group">
+        <input id="proj1" type="text" class="form-control" name="proj1" maxlength="44" required>
+        <label for="proj1"  class="fieldsetLabel"><span>*</span>Project 1</label>
+      </div>
+
+      <div class="form-group">
+        <input id="proj1desc" type="text" class="form-control" name="proj1desc"  maxlength="44" required>
+        <label for="proj1desc"  class="fieldsetLabel"><span>*</span>Description</label>
+      </div>
+
+      <div class="form-group">
+        <input id="proj2" type="text" class="form-control" name="proj2" maxlength="44" required>
+        <label for="proj2"  class="fieldsetLabel"><span>*</span>Project 2</label>
+      </div>
+
+      <div class="form-group">
+        <input id="proj2desc" type="text" class="form-control" name="proj2desc"  maxlength="44" required>
+        <label for="proj2desc"  class="fieldsetLabel"><span>*</span>Description</label>
+      </div>
+
+      <div class="form-group">
+        <input id="proj3" type="text" class="form-control" name="proj3" maxlength="44" required>
+        <label for="proj3"  class="fieldsetLabel"><span>*</span>Project 3</label>
+      </div>
+
+      <div class="form-group">
+        <input id="proj3desc" type="text" class="form-control" name="proj3desc"  maxlength="44" required>
+        <label for="proj3desc" class="fieldsetLabel"><span>*</span>Description</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="fieldset">
+    <legend>Portfolio color scheme</legend>
+      <div class="form-group">
+        <div class="col-md-6">
+          <input class="jscolor" value="ab2567" name="color" id="bgColor">
+          <label for="color" class="fieldsetLabel">Pick a background color</label>
+        </div>
+        <div class="col-md-6">
+          <input class="jscolor" value="black" name="color" id="fontColor">
+          <label for="color" class="fieldsetLabel">Pick a font color</label>
+        </div>
+      </div>
+    </fieldset>
+
+
+      <button class="btn btn-default" type="submit" id="add" name="action">Create my portfolio</button>
     </form>
    </div>
+
+</div>
   
 
 

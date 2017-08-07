@@ -21,5 +21,7 @@ $(document).ready(function() {
     	oriDomi.accordion(num);
     });
 
+	//proxy "/images", :to => "";
+
 }); // document.ready
 

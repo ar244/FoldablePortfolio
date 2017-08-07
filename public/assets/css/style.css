@@ -242,10 +242,49 @@ footer {
 
 /*input form*/
 #containerIndex {
-	border:none;
+	
 }
 
-/*#nameSection {
-	border:5px solid #42a5f5;  
-   margin-top:10px;
-}*/
+#add {
+	background-color: #4d919c;
+	width:100%;
+	margin-top:10px;
+	font: 20px bold;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.fieldset {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 2px;
+	border-color: black;
+  	border-style: solid;
+}
+
+legend {
+	width: auto;
+	border-bottom: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+#firstName, #lastName, #webAddress, #email, #address, 
+#education1, #education2, #education3, 
+#elevator, #picture, #skills,
+#exp1, #exp1desc, #exp2, #exp2desc, #exp3, #exp3desc, 
+#proj1, #proj1desc, #proj2, #proj2desc, #proj3, #proj3desc,
+#bgColor, #fontColor {
+	width: 90%;
+	margin-left: 10px;
+}
+
+.fieldsetLabel {
+	margin-left: 10px;
+}
+
+span {
+	color:red;
+}
+
+
+
