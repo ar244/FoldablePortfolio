@@ -269,6 +269,7 @@ legend {
 	border-bottom: 0px;
 	margin-left: 5px;
 	margin-right: 5px;
+	padding: 7px;
 }
 #firstName, #lastName, #webAddress, #email, #address, 
 #education1, #education2, #education3, 
@@ -282,6 +283,7 @@ legend {
 
 .fieldsetLabel {
 	margin-left: 10px;
+
 }
 
 span {
