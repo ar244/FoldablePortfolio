@@ -1,7 +1,8 @@
+
 <div class="row">
 	{{#each users}}
 	<div class="col-xs-12 col-xs-12 text-center">
-		<h6>Your portfolio is ready!<br>Choose a paper with a nice finish, print it, cut around the black border lines, fold at the inner white borders and take it to your next networking event.</h6><button type="button" class="btn btn-success" id="printBtn">Save & Print</button>
+		<br><h6>Your portfolio is ready!<br>Choose a paper with a nice finish, print it, cut around the black border lines, fold at the inner white borders and take it to your next networking event.</h6><button type="button" class="btn btn-success" id="printBtn">Save & Print</button>
 	</div>
 </div>
 
@@ -10,7 +11,7 @@
 		 <div class="col-xs-6 col-xs-6 main">
 		 <!-- for image -->
 		 	
-		    <img src="{{this.picture}}" alt="Your pic here" class="center-block userImg"><hr>
+		    <img src="{{this.picture}}" alt="user picture" class="center-block userImg"><hr>
 		    
 			<h1 class="text-center hello" id="h1Portfolio">HELLO!</h1>
 			<h1 class="text-center name" id="h1Portfolio">I AM {{this.firstName}} {{this.lastName}}.</h1>
@@ -49,7 +50,8 @@
 					<h4>{{this.exp3}}</h4>
 						<ul>
 							<li>{{this.exp3desc}}.</li>
-						</ul>
+						</ul><hr>
+				<div id="credit">www.myfoldableportfolio.com<br>&copy;2017 Anuradha Ramachandra, Ebru Yucesar</div>
 		</div>
 		 
 		<div class="col-xs-6 col-xs-6 projects">
@@ -66,13 +68,12 @@
 					<ul>
 						<li>{{this.proj3desc}}.</li>
 					</ul><hr>
-				<div id="credit"><i class="fa fa-map-o fa-lg" aria-hidden="true">&nbsp;&nbsp;</i>www.myfoldableportfolio.com<br>&copy;2017 Anuradha Ramachandra, Ebru Yucesar</div><br>
+				<div id="credit">www.myfoldableportfolio.com<br>&copy;2017 Anuradha Ramachandra, Ebru Yucesar</div>
 		</div>
 	</div>
 
-  
-	<h6 class="text-center" id="footer">www.myfoldableportfolio.com -- ©2017 Anuradha Ramachandra, Ebru Yucesar</h6>
  	{{/each}}
 
   </div>
 
+  <h6 class="text-center" id="footer">www.myfoldableportfolio.com -- ©2017 Anuradha Ramachandra, Ebru Yucesar</h6><br>

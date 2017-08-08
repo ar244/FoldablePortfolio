@@ -1,7 +1,8 @@
 
-<h1 id="indexHeading" class="text-center">Enter your details</h1>
-<div class="container" id="containerIndex">
-  
+<div class="container" id="containerIndex"><br>
+<!-- Origami Filled icon by Icons8 -->
+<img src="https://png.icons8.com/origami/ios7/32" title="Origami" width="32" height="32">&nbsp;&nbsp;&nbsp;&nbsp;My Foldable Portfolio
+<p id="indexHeading" class="text-center">Enter your details</p>
 
   <div class="row">
     <form action="/" method="POST">
@@ -20,14 +21,14 @@
     
 
       <div class="form-group">
-        <textarea id="elevator" name="elevator" class="form-control" maxlength="200" required></textarea>
+        <textarea id="elevator" name="elevator" class="form-control" maxlength="300" required></textarea>
         <label for="elevator" class="fieldsetLabel"><span>*</span>What is your elevator pitch?</label>
       </div>
       
 
       <div class="form-group">
         <input id="picture" type="text" class="form-control" name="picture" required>
-        <label for="picture" class="fieldsetLabel"><span>*</span>Path to profile picture</label>
+        <label for="picture" class="fieldsetLabel"><span>*</span>Profile picture url</label>
       </div>
     </fieldset>
 
@@ -75,38 +76,36 @@
 
   </fieldset>
 
-      
-
      <!-- Work Experience -->
      <fieldset class="fieldset">
       <legend>Work Experience</legend>
       <div class="form-group">
-        <input id="exp1" type="text" class="form-control" name="exp1" maxlength="44" required>
+        <input id="exp1" type="text" class="form-control" name="exp1" maxlength="50" required>
         <label for="exp1"  class="fieldsetLabel"><span>*</span>Job title 1</label>
       </div>
 
       <div class="form-group">
-        <input id="exp1desc" type="text" class="form-control" name="exp1desc"  maxlength="44" required maxlength=200>
+        <input id="exp1desc" type="text" class="form-control" name="exp1desc"  maxlength="200" required maxlength=200>
         <label for="exp1desc"  class="fieldsetLabel"><span>*</span>Description</label>
       </div>
 
       <div class="form-group">
-        <input id="exp2" type="text" class="form-control" name="exp2" maxlength="44" required>
+        <input id="exp2" type="text" class="form-control" name="exp2" maxlength="50" required>
         <label for="exp2" class="fieldsetLabel"><span>*</span>Job title 2</label>
       </div>
 
       <div class="form-group">
-        <input id="exp2desc" type="text" class="form-control" name="exp2desc"  maxlength="44" required>
+        <input id="exp2desc" type="text" class="form-control" name="exp2desc"  maxlength="200" required>
         <label for="exp2desc" class="fieldsetLabel"><span>*</span>Description</label>
       </div>
 
       <div class="form-group">
-        <input id="exp3" type="text" class="form-control" name="exp3" maxlength="44" required>
+        <input id="exp3" type="text" class="form-control" name="exp3" maxlength="50" required>
         <label for="exp3"  class="fieldsetLabel"><span>*</span>Job title 3</label>
       </div>
 
       <div class="form-group">
-        <input id="exp3desc" type="text" class="form-control" name="exp3desc"  maxlength="44" required maxlength=200>
+        <input id="exp3desc" type="text" class="form-control" name="exp3desc"  maxlength="200" required maxlength=200>
         <label for="exp3desc"  class="fieldsetLabel"><span>*</span>Description</label>
       </div>
     </fieldset>
@@ -115,56 +114,58 @@
     <fieldset class="fieldset">
     <legend>Projects</legend>
       <div class="form-group">
-        <input id="proj1" type="text" class="form-control" name="proj1" maxlength="44" required>
+        <input id="proj1" type="text" class="form-control" name="proj1" maxlength="50" required>
         <label for="proj1"  class="fieldsetLabel"><span>*</span>Project 1</label>
       </div>
 
       <div class="form-group">
-        <input id="proj1desc" type="text" class="form-control" name="proj1desc"  maxlength="44" required>
+        <input id="proj1desc" type="text" class="form-control" name="proj1desc"  maxlength="200" required>
         <label for="proj1desc"  class="fieldsetLabel"><span>*</span>Description</label>
       </div>
 
       <div class="form-group">
-        <input id="proj2" type="text" class="form-control" name="proj2" maxlength="44" required>
+        <input id="proj2" type="text" class="form-control" name="proj2" maxlength="50" required>
         <label for="proj2"  class="fieldsetLabel"><span>*</span>Project 2</label>
       </div>
 
       <div class="form-group">
-        <input id="proj2desc" type="text" class="form-control" name="proj2desc"  maxlength="44" required>
+        <input id="proj2desc" type="text" class="form-control" name="proj2desc"  maxlength="200" required>
         <label for="proj2desc"  class="fieldsetLabel"><span>*</span>Description</label>
       </div>
 
       <div class="form-group">
-        <input id="proj3" type="text" class="form-control" name="proj3" maxlength="44" required>
+        <input id="proj3" type="text" class="form-control" name="proj3" maxlength="50" required>
         <label for="proj3"  class="fieldsetLabel"><span>*</span>Project 3</label>
       </div>
 
       <div class="form-group">
-        <input id="proj3desc" type="text" class="form-control" name="proj3desc"  maxlength="44" required>
+        <input id="proj3desc" type="text" class="form-control" name="proj3desc"  maxlength="200" required>
         <label for="proj3desc" class="fieldsetLabel"><span>*</span>Description</label>
       </div>
     </fieldset>
 
     <fieldset class="fieldset">
-    <legend>Portfolio color scheme</legend>
+    <legend>Theme Options</legend>
       <div class="form-group">
         <div class="col-md-6">
-          <input class="jscolor" value="ab2567" name="color" id="bgColor">
-          <label for="color" class="fieldsetLabel">Pick a background color</label>
+          <input class="jscolor" value="#ff7a58" name="color" id="bgColor">
+          <label for="color" class="choiceLabel">Choose background color</label>
         </div>
         <div class="col-md-6">
           <input class="jscolor" value="black" name="color" id="fontColor">
-          <label for="color" class="fieldsetLabel">Pick a font color</label>
+          <label for="color" class="choiceLabel">Choose font color</label>
         </div>
       </div>
     </fieldset>
 
 
-      <button class="btn btn-default" type="submit" id="add" name="action">Create my portfolio</button>
+      <button class="btn btn-default" type="submit" id="add" name="action">CREATE MY PORTFOLIO</button>
     </form>
    </div>
 
 </div>
+
+<h6 class="text-center" id="footer">www.myfoldableportfolio.com -- ©2017 Anuradha Ramachandra, Ebru Yucesar</h6><br>
   
 
 
