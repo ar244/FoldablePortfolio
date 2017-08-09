@@ -11,24 +11,24 @@
       <legend>Introduction</legend>
       <div class="form-group">
         <input id="firstName" type="text" class="form-control" name="firstName" maxlength="12"required>
-          <label for="firstName" class="fieldsetLabel"><span>*</span>First Name</label>
+          <label for="firstName" class="fieldsetLabel"><span>*</span>First Name<i> in upper case</i></label>
       </div>
           
       <div class="form-group">
         <input id="lastName" type="text" class="form-control" name="lastName" maxlength="12" required>
-        <label for="lastName" class="fieldsetLabel"><span>*</span>Last Name</label>
+        <label for="lastName" class="fieldsetLabel"><span>*</span>Last Name <i> in upper case</i></label>
       </div>
     
 
       <div class="form-group">
         <textarea id="elevator" name="elevator" class="form-control" maxlength="300" required></textarea>
-        <label for="elevator" class="fieldsetLabel"><span>*</span>What is your elevator pitch?</label>
+        <label for="elevator" class="fieldsetLabel"><span>*</span>Describe yourself in a few words</label>
       </div>
       
 
       <div class="form-group">
         <input id="picture" type="text" class="form-control" name="picture" required>
-        <label for="picture" class="fieldsetLabel"><span>*</span>Profile picture url</label>
+        <label for="picture" class="fieldsetLabel"><span>*</span>Picture URL</label>
       </div>
     </fieldset>
 
@@ -71,7 +71,7 @@
 
       <div class="form-group maxlength="44" col-md-12">
         <input id="skills" type="text" class="form-control" name="skills"  maxlength="200" required maxlength=200>
-        <label for="skills"  class="fieldsetLabel"><span>*</span>What are your skills?</label>
+        <label for="skills" class="fieldsetLabel"><span>*</span>Skills</label>
       </div>
 
   </fieldset>
@@ -85,7 +85,7 @@
       </div>
 
       <div class="form-group">
-        <input id="exp1desc" type="text" class="form-control" name="exp1desc"  maxlength="200" required maxlength=200>
+        <input id="exp1desc" type="text" class="form-control" name="exp1desc"  maxlength="170" required maxlength=180>
         <label for="exp1desc"  class="fieldsetLabel"><span>*</span>Description</label>
       </div>
 
@@ -95,7 +95,7 @@
       </div>
 
       <div class="form-group">
-        <input id="exp2desc" type="text" class="form-control" name="exp2desc"  maxlength="200" required>
+        <input id="exp2desc" type="text" class="form-control" name="exp2desc"  maxlength="170" required>
         <label for="exp2desc" class="fieldsetLabel"><span>*</span>Description</label>
       </div>
 
@@ -105,7 +105,7 @@
       </div>
 
       <div class="form-group">
-        <input id="exp3desc" type="text" class="form-control" name="exp3desc"  maxlength="200" required maxlength=200>
+        <input id="exp3desc" type="text" class="form-control" name="exp3desc"  maxlength="170" required maxlength=200>
         <label for="exp3desc"  class="fieldsetLabel"><span>*</span>Description</label>
       </div>
     </fieldset>
@@ -119,7 +119,7 @@
       </div>
 
       <div class="form-group">
-        <input id="proj1desc" type="text" class="form-control" name="proj1desc"  maxlength="200" required>
+        <input id="proj1desc" type="text" class="form-control" name="proj1desc"  maxlength="170" required>
         <label for="proj1desc"  class="fieldsetLabel"><span>*</span>Description</label>
       </div>
 
@@ -129,7 +129,7 @@
       </div>
 
       <div class="form-group">
-        <input id="proj2desc" type="text" class="form-control" name="proj2desc"  maxlength="200" required>
+        <input id="proj2desc" type="text" class="form-control" name="proj2desc"  maxlength="170" required>
         <label for="proj2desc"  class="fieldsetLabel"><span>*</span>Description</label>
       </div>
 
@@ -139,13 +139,13 @@
       </div>
 
       <div class="form-group">
-        <input id="proj3desc" type="text" class="form-control" name="proj3desc"  maxlength="200" required>
+        <input id="proj3desc" type="text" class="form-control" name="proj3desc"  maxlength="170" required>
         <label for="proj3desc" class="fieldsetLabel"><span>*</span>Description</label>
       </div>
     </fieldset>
 
     <fieldset class="fieldset">
-    <legend>Theme Options</legend>
+    <legend>Customize</legend>
       <div class="form-group">
         <div class="col-md-6">
           <input class="jscolor" value="#ff7a58" name="color" id="bgColor">
@@ -157,7 +157,6 @@
         </div>
       </div>
     </fieldset>
-
 
       <button class="btn btn-default" type="submit" id="add" name="action">CREATE MY PORTFOLIO</button>
     </form>

@@ -91,7 +91,7 @@ h6 {
 
 .main {
 	border: 10px solid white !important;
-/*	height: 600px;*/
+	height: 600px;
 	background-color: #ff7a58 !important;
 	color: white !important;
 	padding-bottom: 5px;
@@ -99,7 +99,7 @@ h6 {
 
 .about {
 	border: 10px solid white !important;
-/*	height: 600px;*/
+	height: 600px;
 	padding-top: 10px;
 	background-color: #ff7a58 !important;
 	color: white !important;
@@ -108,7 +108,7 @@ h6 {
 
 .experience {
 	border: 10px solid white !important;
-/*	height: 600px;*/
+	height: 600px;
 	color: white !important;
 	background-color: #ff7a58 !important;
 	padding-bottom: 5px;
@@ -116,7 +116,7 @@ h6 {
 
 .projects {
 	border: 10px solid white !important;
-/*	height: 600px;*/
+	height: 600px;
 	color: white !important;
 	background-color: #ff7a58 !important;
 	padding-bottom: 5px;
@@ -171,10 +171,10 @@ footer {
 
 #start {
 	text-align: center;
-	padding: 10px 40px 10px 40px;
+	padding: 10px 100px 10px 100px;
 	font-weight: bolder;
 	font-size: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 #left {
@@ -510,6 +510,11 @@ p {
 	margin: 0 auto;
 }
 
+i {
+	font-size: 12px;
+	font-weight: normal;
+}
+
 @media screen and (max-width: 1024px) {
 	#start {margin-top: 50px;}
 }
@@ -521,4 +526,3 @@ p {
 @media screen and (max-width: 640px) {
 	#start {margin-top: 170px;}
 }
-
