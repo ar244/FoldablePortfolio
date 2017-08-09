@@ -44,13 +44,15 @@ router.post("/", function(req, res) {
     "education1", "education2", "education3",
     "skills", "picture",
     "exp1", "exp1desc", "exp2", "exp2desc", "exp3", "exp3desc",
-    "proj1", "proj1desc", "proj2", "proj2desc", "proj3", "proj3desc", "color"
+    "proj1", "proj1desc", "proj2", "proj2desc", "proj3", "proj3desc", 
+    "bgColor", "fontColor"
   ], [
     req.body.firstName, req.body.lastName, req.body.elevator, req.body.webAddress, req.body.email, req.body.address, 
     req.body.education1, req.body.education2, req.body.education3, 
     req.body.skills, req.body.picture,
     req.body.exp1, req.body.exp1desc, req.body.exp2, req.body.exp2desc, req.body.exp3, req.body.exp3desc,
-    req.body.proj1, req.body.proj1desc, req.body.proj2, req.body.proj2desc, req.body.proj3, req.body.proj3desc, req.body.color
+    req.body.proj1, req.body.proj1desc, req.body.proj2, req.body.proj2desc, req.body.proj3, 
+    req.body.proj3desc, req.body.bgColor, req.body.fontColor
   ], 
   function() {
     res.redirect("/portfolio");

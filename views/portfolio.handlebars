@@ -71,8 +71,34 @@
 		</div>
 	</div>
 
+	<style>
+		@media print {
+			.main, .about, .experience, .projects {
+				background-color: #{{this.bgColor}} !important;
+				color: #{{this.fontColor}} !important;
+			}
+			#credit {
+				color: #{{this.fontColor}} !important;
+			}
+		}
+		.main, .about, .experience, .projects {
+			background-color: #{{this.bgColor}} !important;
+			color: #{{this.fontColor}} !important;
+		}
+		#h1Portfolio {
+			color: #{{this.fontColor}} !important;
+		}
+		h2, h3, h4 {
+			color: #{{this.fontColor}} !important;
+		}
+	</style>
+
  	{{/each}}
 
   </div>
 
   <h6 class="text-center" id="footer">www.myfoldableportfolio.com -- ©2017 Anuradha Ramachandra, Ebru Yucesar</h6><br>
+
+  
+
+
