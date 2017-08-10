@@ -503,6 +503,15 @@ p {
 	margin: 0 auto;
 }
 
+.logo {
+	border: none;
+	background-color: white;
+}
+
+button:focus {
+	outline:0;
+}
+
 i {
 	font-size: 12px;
 	font-weight: normal;
@@ -522,4 +531,8 @@ i {
 
 @media screen and (max-width: 640px) {
 	#start {margin-top: 170px;}
+}
+
+@media screen and (max-width: 480px) {
+	#start {margin-top: 250px;}
 }
